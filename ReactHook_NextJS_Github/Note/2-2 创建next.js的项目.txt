@@ -1,0 +1,37 @@
+一.	手动创建
+1.	npm init
+2.	添加必须的依赖:	yarn add react react-dom next
+3.	修改指令:	
+(1)	package.json -> 
+scripts:{
+  "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next",  <!-- 以后会改, 自动去监听和编译变化 -->
+    "build": "next build",
+    "start": "next start", <!-- 以后会改 -->
+}
+
+4.	创建 pages 文件夹 (必须是pages 这个名字, NextJs 会自动找到这个文件夹, 也无需配置路由) -> 创建 index.js:
+
+import React from 'react'; // 可以不写, 因为 nextJs 已经全局去做这个了
+export default ()=><span>cc</span>
+
+注: (1)	jsx 的原理: 转化 React.createElement('span', {}, 'children的内容'), 
+所以需要 import React, 如果没有就会报错。 
+但是 nextJS 已经在全局去做 import React from 'react';  
+所以这个事情, 所以我们不需要再去做了。
+(2)	NextJS 会自动配置路由, 也无需当心这个
+
+5.	跑 yarn dev 
+
+
+二.	自动创建: create-next-app
+
+1.	npx: npm 8 之后增加的命令
+
+2.	yarn create
+(1)	全局安装create-next-app:	npm i -g create-next-app
+(2)	yarn create next-app '文件夹的名称'
+
+3.	create-next-app
+(1)	全局安装create-next-app:	npm i -g create-next-app
+(2)	npx create-next-app my-app
