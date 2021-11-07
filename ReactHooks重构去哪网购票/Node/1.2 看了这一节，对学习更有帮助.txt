@@ -1,0 +1,45 @@
+重点
+一.	语法类
+1.	CSS flex - 弹性布局 (CSS3)
+div {
+	display: flex,
+	align-items:center;
+	justify-content:center;
+}
+flex 前身就是 box 
+
+2.	ECMAScript 2015+
+(1)	Destructuring 
+(2)	Spread
+(3)	Rest
+(4)	Arrow Function
+
+二.	概念类
+2.	SPA: single page app 
+(1)	异步接口通信
+(2)	纯前端渲染
+(3)	解耦的前后端协作
+
+MPA - 多页应用
+
+2.	PWA: HTML -> PWA API -> 服务器/CDN
+(1)	渐进式网络应用
+(2)	可控的静态缓存
+(3)	支持离线访问能力
+(4)	优化载入速度
+
+三.	效率类
+1.	iconfont (小图标)
+(1)	衍生webfont
+(2)	自定义文字图形
+(3)	通常都是单色
+
+2.	snippets - 就是智能生成代码
+(1)	代码片段
+
+
+四.	原则类
+1.	职责分离
+(1)	职责单一
+(2)	模块解耦
+(3)	优化可维护性

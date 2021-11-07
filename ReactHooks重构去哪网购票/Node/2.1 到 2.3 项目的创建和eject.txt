@@ -1,0 +1,23 @@
+2-1 创建项目：使用react-create-app构建工具
+重点
+1.	用 npx 代替 npm: npx 可以下载全局命令的工具, 安装完后移除这个工具。- 这样就无需安装 react-create-app 的工具
+2.	创建 reactjs 指令: npx create-react-app my-app
+3.	可以看到项目的 package.json里 dependencies 里 有 react-scripts 是把其他的package全都打包在里面
+-------------------------------------------------------
+2-2 编译脚本：react-scripts的作用与工作原理
+1.  react-scripts 包含 scripts run 的指令, 所有 scripts 底下的指令指向 react-scripts
+2.  查看方式- node_module/react-scripts/bin/scripts/ 底下 build.js, start.js, eject.js 等等... 对应scripts底下的不同的指令
+3.  react-devtools: react debug的工具
+--------------------------------------------
+
+2-3 解构编译脚本：eject的具体用法
+1.	eject 解决的问题: react-scripts 把所有的其他package全部都集成了，
+					但是如果需要指令的其中的流程，或不同的模式，甚至不同页面, 就不是很灵活, eject 就是为了解决这个问题。
+
+2.	eject 作用:	将所有 creact-react-app 生成的代码全部释放到代码里， 让developer 自己去修改
+
+3.	eject 操作如下:	npm run eject
+
+4.	eject 修改内容如下:
+(1)	dependencies 多了非常多模块而取代了 react-scripts
+(2)	script 中的 eject 命令不见了, 而且指令不指向 react-scripts 而是指向 node scripts
